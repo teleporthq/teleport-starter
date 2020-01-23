@@ -1,0 +1,41 @@
+{
+  "name": "@teleporthq/teleport-starter",
+  "version": "0.0.1",
+  "description": "Starter boilerplate",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist",
+    "lint": "tslint -p ./",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "npm run test -- --coverage --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/teleporthq/teleport-starter.git"
+  },
+  "author": "teleportHQ",
+  "license": "MIT",
+  "homepage": "https://github.com/teleporthq/teleport-starter#README",
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "@types/node": "^13.1.8",
+    "codecov": "^3.6.2",
+    "husky": "^4.2.0",
+    "jest": "^25.1.0",
+    "pretty-quick": "^2.0.1",
+    "ts-jest": "^25.0.0",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint"
+    }
+  }
+}
