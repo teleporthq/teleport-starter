@@ -13,11 +13,10 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "noUnusedLocals": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "incremental": true
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "./__tests__/**/*"
-  ]
+  "exclude": ["node_modules", "dist", "./__tests__/**/*"]
 }
