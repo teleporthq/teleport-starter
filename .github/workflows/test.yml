@@ -1,0 +1,19 @@
+name: Run tests
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "13.x"
+      - run: yarn
+      - run: yarn run lint
+      - run: yarn run build
+      - run: yarn run test:coverage
+      - run: yarn run upload:coverage
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

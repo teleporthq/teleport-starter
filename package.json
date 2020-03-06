@@ -11,7 +11,8 @@
     "lint": "tslint -p ./",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "npm run test -- --coverage --no-cache"
+    "test:coverage": "npm run test -- --coverage --no-cache",
+    "upload:coverage": "codecov"
   },
   "repository": {
     "type": "git",
