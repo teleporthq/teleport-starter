@@ -27,7 +27,7 @@
     "@types/node": "^13.1.8",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
-    "codecov": "^3.6.5",
+    "codecov": "^3.7.1",
     "husky": "^4.2.0",
     "jest": "^25.1.0",
     "pretty-quick": "^2.0.1",
